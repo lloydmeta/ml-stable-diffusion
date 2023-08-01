@@ -4,14 +4,14 @@
 import Foundation
 import CoreML
 
-@available(iOS 17.0, macOS 14.0, *)
+@available(iOS 17.0, macOS 13.1, *)
 public protocol TextEncoderXLModel: ResourceManaging {
     typealias TextEncoderXLOutput = (hiddenEmbeddings: MLShapedArray<Float32>, pooledOutputs: MLShapedArray<Float32>)
     func encode(_ text: String) throws -> TextEncoderXLOutput
 }
 
 ///  A model for encoding text, suitable for SDXL
-@available(iOS 17.0, macOS 14.0, *)
+@available(iOS 17.0, macOS 13.1, *)
 public struct TextEncoderXL: TextEncoderXLModel {
 
     /// Text tokenizer

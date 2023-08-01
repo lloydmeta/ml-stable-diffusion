@@ -136,7 +136,7 @@ public struct Unet: ResourceManaging {
     ///   - pooledStates: Additional text states to condition on
     ///   - geometryConditioning: Condition on image geometry
     /// - Returns: Array of predicted noise residuals
-    @available(iOS 17.0, macOS 14.0, *)
+    @available(iOS 17.0, macOS 13.1, *)
     func predictNoise(
         latents: [MLShapedArray<Float32>],
         timeStep: Int,

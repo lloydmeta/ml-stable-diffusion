@@ -12,7 +12,7 @@ import NaturalLanguage
 ///
 /// This implementation matches:
 /// [Hugging Face Diffusers XL Pipeline](https://github.com/huggingface/diffusers/blob/main/src/diffusers/pipelines/stable_diffusion_xl/pipeline_stable_diffusion_xl.py)
-@available(iOS 17.0, macOS 14.0, *)
+@available(iOS 17.0, macOS 13.1, *)
 public struct StableDiffusionXLPipeline: StableDiffusionPipelineProtocol {
     
     public typealias Configuration = PipelineConfiguration

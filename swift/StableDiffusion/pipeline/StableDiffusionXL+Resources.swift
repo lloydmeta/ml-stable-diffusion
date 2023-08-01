@@ -5,7 +5,7 @@ import Foundation
 import CoreML
 import NaturalLanguage
 
-@available(iOS 17.0, macOS 14.0, *)
+@available(iOS 17.0, macOS 13.1, *)
 public extension StableDiffusionXLPipeline {
 
     struct ResourceURLs {
